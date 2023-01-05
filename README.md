@@ -10,7 +10,7 @@
 
 ## 📌 파일 업로드 방식
 
-1. [깃허브 GUI 방식]을 이용하거나 [PR 방식]을 이용한다.
+1. [깃허브 GUI 방식](https://github.com/nincoding/algorithm-study/blob/main/docs/GUI%20%EB%B0%A9%EC%8B%9D%20%ED%8C%8C%EC%9D%BC%20%EC%97%85%EB%A1%9C%EB%93%9C.md)을 이용하거나 [PR 방식](https://github.com/nincoding/algorithm-study/blob/main/docs/PR%20%EB%B0%A9%EC%8B%9D%20%ED%8C%8C%EC%9D%BC%20%EC%97%85%EB%A1%9C%EB%93%9C.md)을 이용한다.
 2. PR로 보낼 시 자신의  `깃허브아이디와 동일한 브랜치`를 새로 생성한 뒤 스터디 전날까지 이 저장소로 PR요청을 보낸다.
 3. PR 제목은 `[본인이름] n주차_n문제` 로 작성한다.
 
