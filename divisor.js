@@ -5,18 +5,18 @@
  * left = 13 right = 17 result = 43
  */
 
- function solution(left, right) {
-  let answer = 0;
-  let count = 0;
-  for (let i = left ; i <= right ; i++){
-      for (let j = 1 ; j <= i ; j++ ){
-          if (i % j === 0){ count++ }
-      }
-      if(count % 2 === 0){ answer = answer + i }
-      else {answer = answer - i}
-      count = 0
-  }
-  return answer;
+function solution(left, right) {
+    let answer = 0;
+    let count = 0;
+    for (let i = left ; i <= right ; i++){
+        for (let j = 1 ; j <= i ; j++ ){
+            if (i % j === 0){ count++ }
+        }
+        if(count % 2 === 0){ answer = answer + i }
+        else {answer = answer - i}
+        count = 0
+    }
+    return answer;
 }
 
 console.log(solution(13,17))
