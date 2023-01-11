@@ -14,7 +14,8 @@
 <br/>
 
 ```
- let topNum = (denum1*num2)+(denum2*num1) // 분모의 덧셈 결과 값
+function solution(numer1, denom1, numer2, denom2) {
+    let topNum = (denum1*num2)+(denum2*num1) // 분모의 덧셈 결과 값
     let botNum = num1*num2 // 분자의 덧셈 결과 값
     let maxdiv = 1 // 최대공약수
     
