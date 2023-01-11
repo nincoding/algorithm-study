@@ -18,7 +18,7 @@ function solution(numer1, denom1, numer2, denom2) {
 
 단순하고 반복적인 알고리즘으로 최대 공약수를 아래와 같이 구할수 있었다는 것에 감탄하면서 소개드립니다.
 
-물론 아래의 최대 공약수를 구해  분수의 덧셈을 
+물론 아래의 최대 공약수를 구해  분수의 덧셈을 해봤습니다.
 
 ```jsx
 function solution(denum1, num1, denum2, num2) {
