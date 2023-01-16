@@ -24,7 +24,7 @@
 ```
 
 function solution(array) {
-    let sortArray = array.sort((a,b)=> a-b); //정렬을 해줘야 편함.
+    let sortArray = array.sort((a,b)=> a-b); //compareFn를 지정해줘야 유니크드 문자열로 읽지않는다.
     let cnt = 0;
     
     let mode = 1 //최빈값, 최소 1
@@ -34,9 +34,9 @@ function solution(array) {
     
     while(cnt < array.length){ //배열의 길이만큼 반복한다.
         if(beforeNumber !== array[cnt]) { //-1은 array의 원소값으로 오지 않는 수이기 때문에 반복문을 시작하는 순간
-            repeatCnt = 1; // 중복된 횟수.(이 숫자를 1번봤다.)
+            repeatCnt = 1; // 현재 반복 횟수.(이 숫자를 1번봤다.)
         }else{ //같은숫자가 반복되고있는 경우
-            repeatCnt = repeatCnt + 1; //반복횟수에 1을 더해준다.
+            repeatCnt = repeatCnt + 1; //현재 복횟수에 1을 더해준다.
         }
         if (repeatCnt > modeRepeatCnt) { // 반복횟수가 최빈값의 반복횟수보다 크다면
             mode = array[cnt] // 최빈값은 현재 배열의 값.
