@@ -45,8 +45,8 @@ arr.sort((a,b) => { //오름차순
 정수형 배열인 numbers를 받아서 배열의 요소들을 합쳤을때 가장 큰 수를 string값으로 return을 하시오.
 
 - 입출력 예시
-numbers =['6','10','2'] reslut = '6210'
-numbers = ['3','30','34','5','9'] result = '9534330'
+numbers =[6,10,2] reslut = '6210'
+numbers = [3,30,34,5,9] result = '9534330'
 
 ```javascript
   function solution(numbers) {
