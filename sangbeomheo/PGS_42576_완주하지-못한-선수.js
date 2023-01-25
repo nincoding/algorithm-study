@@ -14,6 +14,7 @@
 
 */
 
+// 1. 객체 사용
 function solution(participant, completion) {
   const playerMap = {};
 
@@ -26,6 +27,42 @@ function solution(participant, completion) {
   }
 
   for (const [player, count] of Object.entries(playerMap)) {
+    if (count === 1) return player;
+  }
+}
+
+// 2. Map 사용
+function solution(participant, completion) {
+  const map = new Map();
+
+  for (const player of participant) {
+    if (map.get(player) === undefined) map.set(player, 0);
+    map.set(player, map.get(player) + 1);
+  }
+
+  for (const player of completion) {
+    map.set(player, map.get(player) - 1);
+  }
+
+  for (const [player, count] of map) {
+    if (count === 1) return player;
+  }
+}
+
+// 3. for문 적게 사용
+function solution(participant, completion) {
+  const map = new Map();
+  const length = participant.length;
+
+  for (let i = 0; i < length; i++) {
+    const _participant = participant[i];
+    const _completion = completion[i];
+
+    map.set(_participant, (map.get(_participant) || 0) + 1);
+    map.set(_completion, (map.get(_completion) || 0) - 1);
+  }
+
+  for (const [player, count] of map) {
     if (count === 1) return player;
   }
 }
