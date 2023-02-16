@@ -20,7 +20,6 @@ base, sample 내에 중복되는 요소는 없다고 가정합니다.
 
 ```
 const isSubsetOf = function (base, sample) {
- const bubbleSort = function (arr) {
     const set = new Set([...sample,...base]);
   const result = set.size === base.length ? true : false 
   return result
