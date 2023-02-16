@@ -1,4 +1,4 @@
-# 코플릿: 23 bubbleSort
+# 코플릿: 24.isSubsetOf
 <br/>
 
 - **문제 설명**<br/>
@@ -19,10 +19,13 @@ base, sample 내에 중복되는 요소는 없다고 가정합니다.
 <br/>
 
 ```
-const isSubsetOf = function (base, sample) {
-    const set = new Set([...sample,...base]);
+1차풀이
+  const set = new Set([...sample,...base]);
   const result = set.size === base.length ? true : false 
   return result
+//2차 겉멋풀이
+//극한의 한줄충
+  const set = [...new Set([...sample,...base])].length === base.length ? true : false; return set };
 };
 ```
 
