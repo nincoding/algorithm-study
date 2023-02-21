@@ -28,5 +28,23 @@ function solution(clothes) {
   return sum-1
 
 }
+// Map을 이용한 풀이
+// function solution(clothes) {
+//   const map = new Map()
+//   let sum = 1
+
+//   for (let i of clothes){
+//       if(map.get(i[1]) === undefined) map.set(i[1] , [i[0]])
+//       else map.get(i[1]).push(i[0])
+//   }
+  
+  
+//   for(let key of map.keys()){
+//   sum *= map.get(key).length+1
+//   }
+  
+//   return sum-1
+
+// }
 
 //console.log(solution([["a", "headgear"], ["b", "headgear"], ["c", "eyewear"], ["d", "eyewear"], ["e", "face"], ["f", "face"]] ))
