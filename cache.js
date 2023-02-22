@@ -30,4 +30,3 @@ function solution(cacheSize, cities) {
     
     
 
-["a", "b", "c", "a", "b", "d", "c"]
