@@ -52,7 +52,7 @@ DB 캐시를 적용할 때 **캐시 교체 알고리즘 LRU(Least Recently Used)
 
    1-1. 배열의 요소 순회 → forEach \
    1-2. cache size 만큼 뒤 → slice(index - cacheSize, index) 안에 있는 지 \
-   1-3. 있으면 (Hit) → time + 5, 없으면 (Miss) → time + 1
+   1-3. 있으면 (Hit) → time + 1, 없으면 (Miss) → time + 5
 
 2. cache size 를 다 채우기 전에 Hit이 나오는 경우
 
