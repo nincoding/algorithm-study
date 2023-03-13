@@ -13,7 +13,7 @@ function solution(cacheSize, cities) {
         if(!cache.includes(cities[i])) {
             answer += 5
         }
-         else{
+        else{
             cache.splice(cache.indexOf(cities[i]),1)
             answer +=1
         }
@@ -21,7 +21,7 @@ function solution(cacheSize, cities) {
         
         if(cache.length > cacheSize) cache.shift()
 
-       
+
     }
     return answer;        
 }
