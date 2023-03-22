@@ -6,7 +6,7 @@
 |:--|:--|
 |🏆 임민규|[CPT_31번~34번]()|
 |🏆 한수지|[CPT_31번~34번](https://github.com/nincoding/algorithm-study/blob/main/weeklyIssue/week_11/CPT_31~34%EB%B2%88.md)|
-|🏆 박설화|[CPT_33번 ]()|
+|🏆 박설화|[CPT_33번 ](https://velog.io/@iberis/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EB%AC%B8%EC%A0%9C-orderOfPresentation)|
 
 <br>
 
