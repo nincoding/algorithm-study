@@ -96,8 +96,9 @@ function solution(park, routes) {
   // 시작지점 인덱스 찾기
   let start;
   for (let i = 0; i < parkHigh; i++) {
-    for (let j = 0; j < parkWidth; j++) {
-      if (park[i][j] == "S") start = [i, j];
+    if (park[i].indexOf("S") !== -1) {
+      start = [i, park[i].indexOf("S")];
+      break;
     }
   }
 
